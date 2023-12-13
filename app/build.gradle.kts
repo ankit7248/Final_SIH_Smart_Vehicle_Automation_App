@@ -9,11 +9,13 @@ android {
     defaultConfig {
         applicationId = "com.example.tt"
         minSdk = 29
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 32
+        versionCode = 8
+        versionName = "1.7"
 
+        multiDexEnabled = true;
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true;
     }
 
     buildTypes {
@@ -42,5 +44,6 @@ dependencies {
     implementation ("com.airbnb.android:lottie:3.4.0")
     implementation ("androidx.core:core-splashscreen:1.1.0-alpha02")
     implementation ("com.google.code.gson:gson:2.9.0")
+    implementation("com.android.support:multidex:1.0.3")
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.19")
 }

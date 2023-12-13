@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     tools:context=".MainActivity">
 
     <ImageView
@@ -32,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome"
-        android:textSize="25dp"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -50,7 +51,7 @@
         android:layout_marginTop="5dp"
         android:text="@string/tt"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="normal"
 
         app:layout_constraintLeft_toLeftOf="parent"
@@ -119,29 +120,7 @@
         app:layout_constraintGuide_end="36dp" />
 
 
-    <!--
 
-<!--    <Button-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Login"-->
-    <!--        android:textStyle="bold"-->
-    <!--        >-->
-
-    <!--    </Button>-->
-
-
-    <!--    <com.airbnb.lottie.LottieAnimationView-->
-    <!--        android:id="@+id/Splashscreen"-->
-    <!--        android:layout_width="300dp"-->
-    <!--        android:layout_height="300dp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        app:lottie_autoPlay="true"-->
-    <!--        app:lottie_rawRes="@va">-->
-    <!--    </com.airbnb.lottie.LottieAnimationView>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
