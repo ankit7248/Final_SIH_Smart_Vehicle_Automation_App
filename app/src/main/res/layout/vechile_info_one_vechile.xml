@@ -9,7 +9,7 @@
         android:id="@+id/Name_Vehicle_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="36dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="100dp"
         android:text="Hii, Ankita"
         android:textAlignment="textStart"
@@ -21,11 +21,13 @@
         >
 
     </TextView>
+
+
     <TextView
         android:id="@+id/Safe_Ride_Text_vechile_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
         android:text="Safe Ride !!"
         android:textAlignment="textStart"
@@ -43,7 +45,7 @@
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginTop="60dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="40dp"
         android:elevation="500dp"
         android:src="@drawable/img"
         app:civ_border_color="#FF000000"
@@ -51,22 +53,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/car_anim"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="40dp"
-        android:background="@color/Darknavy"
-        style="Widget.Support.CoordinatorLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Vehicle_info_profile"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/caranimation"
-        app:lottie_speed="2">
+<ImageView
 
-    </com.airbnb.lottie.LottieAnimationView>
+    android:id="@+id/car_anim"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/car_vehicle_info"
+    app:layout_constraintTop_toBottomOf="@+id/Vehicle_info_profile"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+</ImageView>
 
     <TextView
         android:id="@+id/Click_to_customize"
@@ -171,6 +168,176 @@
 
     </TextView>
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Vehicle_No."
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F0F6FE"
+        android:translationZ="5dp"
+        android:layout_marginLeft="40dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Car_info">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Four_wheel_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@+id/Resent_constarint"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/vehcile_no.icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="500dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/vehicleno"
+               app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/vehicle_no.text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Vehicle No."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/vehcile_no.icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                >
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Speed_card"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F0F6FE"
+        android:translationZ="5dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/Safety"
+        app:layout_constraintStart_toEndOf="@+id/Vehicle_No."
+        app:layout_constraintTop_toBottomOf="@+id/Car_info">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Speed_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/Speed_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:elevation="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/speed_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/Speed_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Speed"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Speed_icon">
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Safety"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F0F6FE"
+        android:translationZ="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Car_info">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/safety_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toStartOf="@+id/Resent_constarint"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/med_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="500dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/med"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/med_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Safety"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/med_icon"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                >
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline17"

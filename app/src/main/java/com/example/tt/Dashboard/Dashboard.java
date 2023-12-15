@@ -17,7 +17,6 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard_home);
 
-
         bottomNavigationView = findViewById(R.id.BottomNavigation_home);
 
         bottomNavigationView.setBackgroundTintList(null);
