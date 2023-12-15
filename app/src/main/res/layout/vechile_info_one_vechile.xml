@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Name_Vehicle_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="100dp"
+        android:text="Hii, Ankita"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/Safe_Ride_Text_vechile_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Safe Ride !!"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name_Vehicle_info">
+
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Vehicle_info_profile"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:elevation="500dp"
+        android:src="@drawable/img"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/car_anim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/Darknavy"
+        style="Widget.Support.CoordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Vehicle_info_profile"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/caranimation"
+        app:lottie_speed="2">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/Click_to_customize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Click to Customize your vehicle Photo"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_anim">
+
+    </TextView>
+
+
+    <FrameLayout
+        android:id="@+id/Caris_active_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/car_is_active"
+        app:layout_constraintBottom_toBottomOf="@+id/Car_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Click_to_customize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Car is Active"
+            android:elevation="500dp"
+            android:textColor="@color/Green"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/Cartype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Type"
+        android:textColor="@color/Blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Click_to_customize"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/Car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leopard Electric"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/Cartype"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="3dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/Car_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Information"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/Caris_active_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/See_all_vechile_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginRight="40dp"
+        android:text="See All"
+        android:textColor="@color/Blue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Car_info"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Car_name">
+
+    </TextView>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="36dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="36dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

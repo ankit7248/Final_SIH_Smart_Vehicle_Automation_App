@@ -46,4 +46,12 @@ dependencies {
     implementation ("com.google.code.gson:gson:2.9.0")
     implementation("com.android.support:multidex:1.0.3")
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.19")
+
+    implementation ("com.airbnb.android:lottie:3.4.0")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
+    implementation ("androidx.fragment:fragment:1.6.2")
+
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
 }

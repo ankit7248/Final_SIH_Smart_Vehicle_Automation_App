@@ -2,10 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TT" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">@color/Darknavy</item>
+
     </style>
 
     <style name="Theme.TT" parent="Base.Theme.TT" />
+
+    <style name="SlideActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name = "android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name = "android:activityOpenExitAnimation">@anim/slide_out_left</item>
+    </style>
 
     <style name="Blue_Button" parent="Theme.MaterialComponents.NoActionBar">
 
@@ -15,6 +21,14 @@
         <item name="android:textSize">18dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:padding">15dp</item>
+        <item name="elevation">500dp</item>
+
+    </style>
+
+    <style name="Dashboard_shape" parent="Theme.MaterialComponents.NoActionBar">
+
+        <item name="backgroundTint">#4E95F6</item>
+        <item name="cornerSizeBottomRight">50</item>
         <item name="elevation">500dp</item>
 
     </style>

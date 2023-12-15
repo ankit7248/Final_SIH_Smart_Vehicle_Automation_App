@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -85,11 +86,12 @@
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
+        android:backgroundTint="#F0F6FE"
         android:translationZ="5dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="#F0F6FE"
-        android:layout_marginRight="40dp"
+        android:layout_marginLeft="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Two_wheller_card"
         app:layout_constraintTop_toBottomOf="@+id/Vehicle_Text">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -155,16 +157,15 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/Two_wheller_card"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#F0F6FE"
         android:translationZ="5dp"
         app:cardCornerRadius="10dp"
+        android:layout_marginLeft="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/Three_vehicle_card"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Vehicle_Text">
@@ -235,11 +236,12 @@
         android:id="@+id/Four_wheller_card"
         android:layout_width="150dp"
         android:layout_height="80dp"
-        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="#F0F6FE"
         android:translationZ="5dp"
+        android:layout_marginLeft="40dp"
         app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Other_vehcile_card"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Two_wheller_card">
 
@@ -310,11 +312,13 @@
         android:layout_width="150dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
+
+        android:backgroundTint="#F0F6FE"
         android:translationZ="5dp"
         app:cardCornerRadius="10dp"
-        android:backgroundTint="#F0F6FE"
-        android:layout_marginRight="40dp"
+        android:layout_marginLeft="4dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Four_wheller_card"
         app:layout_constraintTop_toBottomOf="@+id/Three_vehicle_card">
 
         <androidx.constraintlayout.widget.ConstraintLayout
