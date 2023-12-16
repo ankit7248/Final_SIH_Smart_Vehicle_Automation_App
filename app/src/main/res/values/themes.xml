@@ -2,8 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.TT" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/Darknavy</item>
-
+         <item name="colorPrimary">@color/DarkNavy</item>
     </style>
 
     <style name="Theme.TT" parent="Base.Theme.TT" />
@@ -44,7 +43,7 @@
         <item name="elevation">500dp</item>
 
     </style>
-    <style name="Black_customize_button">
+    <style name="Black_customize_button" parent="Theme.MaterialComponents.NoActionBar">
         <item name="backgroundTint">#1E1E1E</item>
         <item name="cornerRadius">10dp</item>
         <item name="android:textColor">@color/white</item>
@@ -78,6 +77,6 @@
 
     </style>
 
-
+    <dimen name="my_value">16dp</dimen>
 
 </resources>

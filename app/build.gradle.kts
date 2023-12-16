@@ -44,7 +44,7 @@ dependencies {
     implementation ("com.airbnb.android:lottie:3.4.0")
     implementation ("androidx.core:core-splashscreen:1.1.0-alpha02")
     implementation ("com.google.code.gson:gson:2.9.0")
-    implementation("com.android.support:multidex:1.0.3")
+
     implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.19")
 
     implementation ("com.airbnb.android:lottie:3.4.0")

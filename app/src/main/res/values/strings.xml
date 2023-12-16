@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">TT</string>
-    <string name="tt">Best Place for today innovation</string>
-    <string name="pp">shaper</string>
+
+    <string name="_0">0</string>
+    <string name="_1">0</string>
+    <string name="_2">0</string>
+    <string name="_3">0</string>
+    <string name="_4">0</string>
+    <string name="_5">0</string>
+
 </resources>

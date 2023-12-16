@@ -109,8 +109,9 @@
         android:layout_height="1dp"
         android:layout_marginTop="44dp"
         android:background="@android:color/black"
-        app:layout_constraintTop_toBottomOf="@id/Sign_Out"
-        tools:layout_editor_absoluteX="56dp" >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Sign_Out">
 
     </View>
 
@@ -125,7 +126,6 @@
         android:textColor="@color/black"
         android:backgroundTint="#F0F6FE"
         android:textSize="18sp"
-
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Line1">
@@ -146,7 +146,7 @@
         android:drawableRight="@drawable/baseline_keyboard_arrow_right_24"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Line1">
+        app:layout_constraintTop_toBottomOf="@id/More">
 
     </Button>
 
