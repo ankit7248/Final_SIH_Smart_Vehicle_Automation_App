@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <ImageView
         android:id="@+id/Rect2"
         android:layout_width="wrap_content"
@@ -12,7 +11,6 @@
         android:src="@drawable/rect2"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </ImageView>
 
     <ImageView
@@ -22,7 +20,6 @@
         android:src="@drawable/rect"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </ImageView>
 
     <ImageView
@@ -32,7 +29,6 @@
         android:src="@drawable/logo"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
     </ImageView>
 
     <!--    <ImageView-->
